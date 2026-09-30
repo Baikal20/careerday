@@ -1665,3 +1665,345 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================
+   MOBILE ADAPTATION
+   Desktop design stays unchanged
+========================= */
+
+@media (max-width: 650px) {
+
+  /* NAVBAR */
+
+  .navbar {
+    height: 68px;
+    padding: 0 16px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .login-button {
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+
+
+  /* HOME */
+
+  .hero {
+    min-height: auto;
+    padding: 75px 18px 65px;
+  }
+
+  .hero-label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 11vw, 48px);
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    max-width: 500px;
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 30px;
+    gap: 10px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+    padding: 14px 18px;
+  }
+
+
+  /* STEPS */
+
+  .steps {
+    padding: 35px 16px 70px;
+    gap: 12px;
+  }
+
+  .step {
+    padding: 24px;
+  }
+
+  .step h3 {
+    font-size: 19px;
+  }
+
+
+  /* WHY */
+
+  .why-section {
+    padding: 70px 18px 80px;
+  }
+
+  .why-header h2 {
+    font-size: 35px;
+    letter-spacing: -1.5px;
+  }
+
+  .why-header > p:last-child {
+    font-size: 14px;
+  }
+
+  .why-grid {
+    margin-top: 30px;
+    gap: 12px;
+  }
+
+  .why-card {
+    padding: 24px;
+  }
+
+
+  /* CAREERS */
+
+  .careers-page {
+    padding: 55px 16px 70px;
+  }
+
+  .careers-header {
+    margin-bottom: 35px;
+  }
+
+  .careers-header h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .careers-header p:last-child {
+    font-size: 14px;
+  }
+
+  .career-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .career-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .career-card h3 {
+    font-size: 21px;
+  }
+
+
+  /* CAREER DETAILS */
+
+  .career-details-hero {
+    padding: 45px 18px 60px;
+  }
+
+  .career-details-hero h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .details-description {
+    font-size: 14px;
+  }
+
+  .details-content {
+    padding: 0 18px 80px;
+  }
+
+  .details-block {
+    padding: 40px 0;
+  }
+
+  .details-block h2 {
+    font-size: 27px;
+    letter-spacing: -1px;
+  }
+
+  .day-list > div {
+    display: block;
+    padding: 17px;
+  }
+
+  .day-list span {
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  .try-banner {
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .try-banner h2 {
+    font-size: 24px;
+  }
+
+
+  /* TRY CAREER */
+
+  .try-page {
+    padding: 50px 16px 80px;
+  }
+
+  .try-header h1 {
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+
+  .task-card {
+    margin-top: 40px;
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .task-card h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .task-option {
+    padding: 15px;
+    font-size: 13px;
+  }
+
+
+  /* REFLECTION */
+
+  .reflection-page {
+    padding: 50px 16px 80px;
+  }
+
+  .reflection-header h1 {
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+
+  .reflection-question {
+    padding: 28px 0;
+  }
+
+  .reflection-question h2 {
+    font-size: 20px;
+  }
+
+  .choice-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .choice {
+    padding: 15px;
+  }
+
+
+  /* PROGRESS */
+
+  .progress-page {
+    padding: 55px 16px 80px;
+  }
+
+  .progress-header h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .progress-header > p:last-child {
+    font-size: 14px;
+  }
+
+  .progress-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 45px;
+  }
+
+  .progress-stat {
+    padding: 22px;
+  }
+
+  .progress-card {
+    padding: 17px;
+    gap: 13px;
+  }
+
+  .progress-card-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 21px;
+  }
+
+  .progress-card-info h3 {
+    font-size: 17px;
+  }
+
+  .completed-check {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+
+  /* FOOTER */
+
+  .footer {
+    padding: 45px 18px 22px;
+  }
+
+  .footer-main {
+    gap: 35px;
+  }
+
+  .footer-links {
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom {
+    margin-top: 35px;
+  }
+}
+
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 380px) {
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .careers-header h1,
+  .progress-header h1,
+  .try-header h1,
+  .reflection-header h1 {
+    font-size: 36px;
+  }
+
+  .career-card {
+    padding: 20px;
+  }
+
+  .task-card {
+    padding: 18px;
+  }
+
+  .progress-card {
+    gap: 10px;
+  }
+
+}
