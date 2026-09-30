@@ -1,6 +1,12 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
+    const navigate = useNavigate()
+
+    const handleLogin = () => {
+        navigate('/login')
+    }
+
     return (
         <nav className="navbar">
             <Link to="/" className="logo">
@@ -12,7 +18,10 @@ export default function Navbar() {
                 <Link to="/progress">My Progress</Link>
             </div>
 
-            <button className="login-button">
+            <button
+                className="login-button"
+                onClick={handleLogin}
+            >
                 Log in
             </button>
         </nav>

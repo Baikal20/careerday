@@ -9,6 +9,7 @@ import CareerDetails from './pages/CareerDetails'
 import TryCareer from './pages/TryCareer'
 import Reflection from './pages/Reflection'
 import Progress from './pages/Progress'
+import Login from './pages/Login'
 
 function App() {
     return (
@@ -46,6 +47,11 @@ function App() {
                 <Route
                     path="/progress"
                     element={<Progress />}
+                />
+
+                <Route
+                    path="/login"
+                    element={<Login />}
                 />
 
             </Routes>

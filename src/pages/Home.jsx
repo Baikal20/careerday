@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Home() {
     return (
         <main className="home">
@@ -19,17 +21,16 @@ export default function Home() {
                 </p>
 
                 <div className="hero-buttons">
-                    <a href="/careers" className="primary-button">
+                    <Link to="/careers" className="primary-button">
                         Explore Careers →
-                    </a>
+                    </Link>
 
-                    <a href="/careers" className="secondary-button">
+                    <Link to="/careers" className="secondary-button">
                         Try a Career
-                    </a>
+                    </Link>
                 </div>
 
             </section>
-
 
             <section className="steps">
 
@@ -81,7 +82,6 @@ export default function Home() {
                     </p>
 
                 </div>
-
 
                 <div className="why-grid">
 
