@@ -10,9 +10,7 @@ export default function Login() {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (!name || !email) {
-            return
-        }
+        if (!name || !email) return
 
         localStorage.setItem(
             'careerDayUser',
@@ -30,39 +28,60 @@ export default function Login() {
 
             <div className="login-card">
 
-                <p className="hero-label">
-                    CAREERDAY
-                </p>
+                <div className="login-header">
+                    <p className="hero-label">
+                        CAREERDAY ACCOUNT
+                    </p>
 
-                <h1>
-                    Welcome back.
-                </h1>
+                    <h1>
+                        Welcome back.
+                    </h1>
 
-                <p>
-                    Log in to save your career exploration progress.
-                </p>
+                    <p>
+                        Log in to save your career exploration progress
+                        and continue where you left off.
+                    </p>
+                </div>
 
-                <form onSubmit={handleSubmit}>
+                <form
+                    className="login-form"
+                    onSubmit={handleSubmit}
+                >
 
-                    <input
-                        type="text"
-                        placeholder="Your name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                    />
+                    <div className="login-field">
+                        <label>Your name</label>
 
-                    <input
-                        type="email"
-                        placeholder="Email address"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
+                        <input
+                            type="text"
+                            placeholder="Enter your name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
+                    </div>
 
-                    <button type="submit">
-                        Continue →
+                    <div className="login-field">
+                        <label>Email address</label>
+
+                        <input
+                            type="email"
+                            placeholder="you@example.com"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </div>
+
+                    <button
+                        className="login-submit"
+                        type="submit"
+                    >
+                        Continue to CareerDay →
                     </button>
 
                 </form>
+
+                <p className="login-note">
+                    Your information is saved only on this device.
+                </p>
 
             </div>
 
